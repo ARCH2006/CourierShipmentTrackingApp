@@ -8,6 +8,6 @@ A Java-based logistics application demonstrating SOLID principles and Role-Based
 - **Logic:** Centralized tracking management with specialized permissions for staff.
 
 ### Key Highlights
-- **Polymorphic Behavior:** Shared `viewTracking` logic across all users, with privileged `update` overrides for Managers.
+- **Polymorphic Behavior:** Shared `viewTracking` logic across all users, with privileged `update` overrides for Managers with role based access that customer cannot update the shipping status and manager can pnly update the status.
 - **Data Integrity:** Ensures that shipments are linked to specific couriers and customers via object composition.
 - **Scalability:** Built with an abstract foundation to easily add new shipment types (e.g., Fragile, International) or new user roles.
